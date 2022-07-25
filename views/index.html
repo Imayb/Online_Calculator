@@ -24,66 +24,66 @@
         </tr>
         <tr>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">C</button>
+                <button type="button" class="btn btn-primary" onclick="clearResult()">C</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">+/-</button>
+                <button type="button" class="btn btn-primary" onclick="plusMinus()">+/-</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">%</button>
+                <button type="button" class="btn btn-primary" onclick="percentage()">%</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">/</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="">7</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="">8</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="">9</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="">*</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('/')">/</button>
             </td>
         </tr>
         <tr>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">4</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('7')">7</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">5</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('8')">8</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">6</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('9')">9</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">-</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('*')">*</button>
             </td>
         </tr>
         <tr>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">1</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('4')">4</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">2</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('5')">5</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">3</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('6')">6</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="">+</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('-')">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('1')">1</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('2')">2</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('3')">3</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('+')">+</button>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <button type="button" class="btn btn-primary btn2" onclick="">0</button>
+                <button type="button" class="btn btn-primary btn2" onclick="buttonNum('0')">0</button>
             </td>
             <td colspan="2">
-                <button type="button" class="btn btn-primary btn2" onclick="">=</button>
+                <button type="button" class="btn btn-primary btn2" onclick="calculateResult()">=</button>
             </td>
         </tr>
     </table>
