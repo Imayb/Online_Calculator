@@ -1,3 +1,4 @@
+
 function buttonNum(num) {
     document.getElementById("result").value += num
 }
@@ -26,3 +27,8 @@ function percentage() {
 
     document.getElementById("result").value = result
 }
+
+function toggleMode() {
+    var element = document.body;
+    element.classList.toggle("dark");
+ }

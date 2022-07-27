@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../public/style.css">
     <script src="../public/js/calculator.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
 
 </head>
 <body>
@@ -16,77 +18,88 @@
     <br>
 
     <!-- Start of calculator -->
-    <table class="text-center d-flex justify-content-center">
-        <tr>
-            <td colspan="4">
-                <input type="text" id="result">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="clearResult()">C</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="plusMinus()">+/-</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="percentage()">%</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('/')">/</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('7')">7</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('8')">8</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('9')">9</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('*')">*</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('4')">4</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('5')">5</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('6')">6</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('-')">-</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('1')">1</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('2')">2</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('3')">3</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNum('+')">+</button>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <button type="button" class="btn btn-primary btn2" onclick="buttonNum('0')">0</button>
-            </td>
-            <td colspan="2">
-                <button type="button" class="btn btn-primary btn2" onclick="calculateResult()">=</button>
-            </td>
-        </tr>
-    </table>
+    <div class="container">
+            <div class="calculator">
+                <div class="display-screen">
+                    <div id="display"></div>
+                </div>
+                <div class="buttons">
+            <table class="text-center d-flex justify-content-center">
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="result">
+                    </td>
+                </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn-clear" onclick="clearResult()">C</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-operator" onclick="plusMinus()">+/-</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-operator" onclick="percentage()">%</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-operator" onclick="buttonNum('/')">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn-number" onclick="buttonNum('7')">7</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-number" onclick="buttonNum('8')">8</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-number" onclick="buttonNum('9')">9</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-operator" onclick="buttonNum('*')">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn-number" onclick="buttonNum('4')">4</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-number" onclick="buttonNum('5')">5</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-number" onclick="buttonNum('6')">6</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-operator" onclick="buttonNum('-')">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn-number" onclick="buttonNum('1')">1</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-number" onclick="buttonNum('2')">2</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-number" onclick="buttonNum('3')">3</button>
+                </td>
+                <td>
+                    <button type="button" class="btn-operator" onclick="buttonNum('+')">+</button>
+                </td>
+            </tr>
+            <tr>
+                <tr>
+                        
+                        <td colspan="2"><button type="button" class="btn-number" id="btn-zero" onclick="buttonNum('0')">0</button></td>
+                        <td colspan="2"><button type="button" class="btn-equal" id="btn-equal" onclick="calculateResult()">=</button></td>
+                </tr>
+                
+            </tr>
+        </table>
+        <button type="button" class="btn-toggle" onclick="toggleMode()">Toggle mode</button>
+        </div>
+    </div>
+</div>
+
 
     <!-- End of clalculator -->
     
